@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <link rel="stylesheet" href="project1.css">
+    <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+<button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
+<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>Популярные кроссы 2025:</p>
+  <ul>
+    <div class="nike">
+    <img src="https://ir-3.ozone.ru/s3/multimedia-1-h/wc1000/7326621881.jpg" alt="найк">
+    <h3>kross nike</h3>
+    <p class="price">8990tg</p>
+    </div>
+
+    <div class="nike">
+      <img src="https://ir-3.ozone.ru/s3/multimedia-1-v/wc1000/7094085535.jpg" alt="nike">
+      <h3>Nike black</h3>
+      <p class="price">9000tg</p>
+    </div>
+
+    <div class="nike">
+      <img src="https://avatars.mds.yandex.net/i?id=e3e53b7d1005061a04ad361379a2278b_l-4553981-images-thumbs&n=13" alt="nike">
+      <h3>Nike black</h3>
+      <p class="price">12900tg</p>
+    </div>
+
+    <div class="Puma">
+      <img src="https://avatars.mds.yandex.net/i?id=ec410efcb029dbd3eee27f6d3d9afc13_l-5880141-images-thumbs&n=13" alt="пума">
+      <h3>kross puma</h3>
+      <p class="price">12500tg</p>
+      </div>
+
+      <div class="Puma">
+        <img src="https://avatars.mds.yandex.net/i?id=d6153711647fc84730cb813f28008d88_l-7612999-images-thumbs&n=13" alt="пума">
+        <h3>kross puma</h3>
+        <p class="price">11590tg</p>
+        </div>
+
+        <div class="Puma">
+          <img src="https://avatars.mds.yandex.net/get-mpic/12012798/2a000001918ecc187506be118196bd2ee6ea/orig" alt="пума">
+          <h3>kross puma</h3>
+          <p class="price">14960tg</p>
+          </div>
+
+          <div class="Adidas">
+            <img src="https://avatars.mds.yandex.net/i?id=6c3980a8de391262fbc1b0a6c82cd823_l-9683943-images-thumbs&n=13" alt="адидас">
+            <h3>kross adidas</h3>
+            <p class="price">11000tg</p>
+            </div>
+      
+            <div class="Puma">
+              <img src="https://avatars.mds.yandex.net/i?id=f79714ede1bc543354b96918569301a2_sr-5528343-images-thumbs&n=13" alt="адидас">
+              <h3>kross adidas</h3>
+              <p class="price">12200</p>
+              </div>
+      
+              <div class="Puma">
+                <img src="https://avatars.mds.yandex.net/i?id=baf05b749a065fd7e66ee82e9d2c5663_l-13322296-images-thumbs&n=13" alt="адидас">
+                <h3>kross adidas</h3>
+                <p class="price">16990tg</p>
+                </div>
+  
+
+
+    
+    
+          
+  </ul>
+</div>
+
+<div id="News" class="tabcontent">
+  <h3>News</h3>
+  <p>Ожидайте новостей!</p>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Связь с разроботчиком:Telegram:@Hukfw</p>
+  
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>О нас: это сайт про кроссы, задать вопросы можете в кладке(Contact)</p>
+</div>
+</body>
+</html>
+
+<script>
+    function openPage(pageName,elmnt,color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+       
+    </body>
+    </html> 
+    
